@@ -128,7 +128,11 @@ bot(
         })
       msg += ` ╰─────────────────\n`
     }
-
+    await message.sendMessage(
+  message.from,
+  { url: 'https://files.catbox.moe/a060kj.jpeg' }, // ton image
+  'imageMessage'
+)
     await message.send(msg.trim())
   }
 )
